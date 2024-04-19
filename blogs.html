@@ -44,108 +44,222 @@
 
 						<!-- Post -->
 							<section class="post">
-								<header class="major">
-									<h1>Big Data Fundamentals Assignments</h1>
-									<p>Delve into my portfolio of assignments showcasing screenshots of code and visualizations, accompanied by detailed
-									explanations in PDF format. These documents offer comprehensive walkthroughs of the code, along with clear explanations
-									of the visualizations, facilitating an easy grasp of the presented concepts.</p>
-								</header>
-								<h3><a>A. Assignment I<br /></a></h3>
-								<div style="text-align: center;">
-									<object data="assets/pdf/c0932089_Assignment1.pdf" type="application/pdf" width="1200" height="600">
-										<p>Alternative text - include a link to download the PDF instead.</p>
-									</object>
-									<small style="font-size: 80%;">In this assignment, ITVersity Lab was utilized. Initially, a directory was created using my first and last name,
-									followed by opening Vim to write a Python file. The file was saved with a .py extension, and the Python code was
-									executed. Subsequently, navigation to the Hadoop directory was performed using the 'hdfs dfs -ls' command, and the
-									permissions of the files were checked.</small>
-								</div>
-								<hr> <!-- Add horizontal line divider -->
-								<h3><a>B. Assignment II<br /></a></h3>
-								<div style="text-align: center;">
-									<object data="assets/pdf/c0932089_Assignment2.pdf" type="application/pdf" width="1200" height="600">
-										<p>Alternative text - include a link to download the PDF instead.</p>
-									</object>
-								<div style="text-align: left;">
-									<small style="font-size: 80%;">
-										<strong>In Question 01 </strong>of this assignment, I utilized ITVersity Lab to create and construct a MapReduce
-										job, effectively
-										managing extensive datasets through the MapReduce paradigm. To generate a dataset, I created a data.txt file
-										within the
-										ITVersity Lab's designated folder named 'pRai' (my last name folder), intended for processing via MapReduce.
-										<br>
-								
-										<strong>Moving on to Question 02</strong>, Databricks was employed for the task. Appropriate visualizations were
-										generated for
-										both <a href="https://drive.google.com/file/d/103HCXH0f4_Eiab0Vg_lrMMrOtTvEji2R/view?usp=sharing" target="_blank"> <strong>"menu" (VIEW menu.csv)</strong></a>
-										and <a href="https://drive.google.com/file/d/1RjS-eE4YB63VXssub7xVWuRvYt10TPjO/view?usp=sharing" target="_blank"> <strong>"sales" (VIEW sales.csv)</strong> </a> datasets, focusing on the following key performance indicators
-										(KPIs): <br>
-								
-										<strong>1.</strong> Determining the total amount spent by each food category.<br>
-										<strong>2.</strong> Calculating the total amount spent by each customer.<br>
-										<strong>3.</strong> Analyzing the total amount of sales for each month.<br>
-										<strong>4.</strong> Evaluating yearly and quarterly sales trends.<br>
-										<strong>5.</strong> Identifying the top-ordered food items.<br>
-										<strong>6.</strong> Assessing total sales by each county.<br>
-								
-										All screenshots of the code are provided in the accompanying PDF document. Furthermore, the complete project
-										code is
-										accessible under the <strong>"Data Analysis using PySpark and Visualizations in Databricks" </strong>section of
-										the projects,
-										available
-										for viewing on GitHub.
-									</small>
-								</div>
+						<header>
+							<h2><a href="#">Big Data Essentials: GFS, ColumnDB, MapReduce<br />
+								</a></h2>
+						</header>
+						<small style="font-size: 80%;">									
+						<p>"Step into the realm of big data with my portfolio of blogs dedicated to exploring seminal research papers on Google
+						File System (GFS), Column-oriented Database Management Systems (DBMS), and MapReduce. Delving into these foundational
+						pillars of modern data infrastructure, each blog post offers a comprehensive analysis of the principles, architectures,
+						and real-world applications of these groundbreaking technologies. From understanding the fault-tolerant distributed file
+						system of GFS to unraveling the efficiency and scalability of Column-oriented DBMS, and exploring the paradigm-shifting
+						data processing model of MapReduce, this portfolio serves as a gateway to unraveling the complexities and unlocking the
+						potential of managing and analyzing vast datasets. Whether you're an industry practitioner seeking insights or an
+						academic enthusiast eager to explore the forefront of big data innovation, these blogs provide invaluable perspectives
+						on the fundamental components shaping the data landscape."</p>
+						</small>
 
+						<small style="font-size: 80%;">
+							<strong>A. Google File System (GFS)</strong>
+							<p>In this project, a fundamental MapReduce task was undertaken using Python to analyze the content of a text file
+								within
+								the ITVersity lab environment. The objective was to gain practical experience in implementing the MapReduce
+								paradigm and
+								performing basic data analysis tasks.</p>
+							<p>
+								<strong>Introduction</strong> <br>
+								The research paper, authored by Ghemawat, S., Gobioff, H., & Leung, and titled "The Google File System (GFS)," explores
+								how Google handles its vast amount of data. Published in 2003, it sheds light on creating the GFS and the unique
+								challenges Google faces in managing its data infrastructure. The authors delve into the design principles of GFS,
+								emphasizing its departure from conventional file system approaches to meet Google's specific needs. This paper holds
+								significance for Google and the broader field of data management and distributed systems. By sharing insights into the
+								development of GFS, it offers valuable lessons applicable to industries grappling with large-scale data processing. This
+								review paper aims to provide a critical analysis and balanced evaluation of its contribution to the field. <br>
+								<p>
+								<strong>Critical Analysis</strong> <br>
+								This paper presents a compelling argument for the design and implementation of the GFS by systematically addressing the
+								challenges of managing Google's vast amounts of data. The authors' argumentation throughout the paper is clear and
+								logically coherent, as they systematically discuss the key observations and design decisions that led to the development
+								of GFS. For instance, they effectively illustrate the prevalence of component failures and the need for fault tolerance
+								mechanisms in a distributed file system by highlighting Google's experience with application bugs, hardware failures,
+								and other issues. However, while the logic behind the design choices is generally sound, some aspects of the
+								argumentation could be further elaborated to enhance clarity, particularly in explaining the trade-offs between
+								consistency and performance in GFS's design. <br>
+								
+								The strength of the evidence and methodology used in the paper is another notable aspect. The authors provide detailed
+								descriptions of GFS's architecture, fault tolerance mechanisms, and performance characteristics, supported by insights
+								gleaned from Google's real-world deployments. By presenting empirical data and performance evaluations, they demonstrate
+								the efficacy of GFS in handling Google's data processing needs. However, while the methodology used in evaluating GFS's
+								performance is robust, the paper could benefit from more in-depth discussions on the limitations and potential biases of
+								the data collected, as well as alternative approaches that were considered during the design process. <br>
+								
+								The GFS paper makes a significant contribution to the field of distributed systems by introducing novel concepts and
+								design principles tailored to Google's unique requirements. The paper's emphasis on scalability, fault tolerance, and
+								performance optimization offers new insights into the challenges of managing large-scale data in distributed
+								environments. Additionally, GFS's simplified consistency model and support for append-heavy workloads represent
+								significant advancements in file system design. However, while the paper clearly articulates the importance of these
+								contributions, a more explicit discussion on how GFS compares to existing file systems and its impact on subsequent
+								research would further strengthen its significance. <br>
+								
+								Lastly, the structure, organization, and writing style of the paper are generally effective in conveying its key points.
+								The authors provide a clear overview of GFS's design principles, followed by detailed discussions on its architecture,
+								fault tolerance mechanisms, and performance characteristics. However, the paper occasionally suffers from repetitive
+								explanations and technical jargon, which may hinder understanding for readers less familiar with distributed systems.
+								Overall, "The Google File System" paper effectively balances technical depth with accessibility, making it a valuable
+								resource for researchers and practitioners in the field of distributed systems. <br>
+								</p>
+								<p>
+									<strong>Conclusion</strong>  <br>
+									In summary, "The Google File System" paper provides an in-depth analysis of the design and deployment of the Google File
+									System (GFS), shedding light on the complexities and advancements in managing extensive data across distributed
+									environments. Notably, the paper introduces innovative concepts like fault tolerance mechanisms, simplified consistency
+									models, and efficient support for append-heavy workloads, contributing significantly to the field of distributed
+									systems. Its meticulous examination of GFS's architecture, fault tolerance mechanisms, and performance attributes offers
+									valuable insights for researchers and practitioners aiming to develop and deploy similar systems in diverse settings. <br>
 
-								</div>
-								<hr> <!-- Add horizontal line divider -->
-								<h3><a>C. Assignment III<br /></a></h3>
-								<div style="text-align: center;">
-									<object data="assets/pdf/c0932089_Assignment3.pdf" type="application/pdf" width="1200" height="600">
-										<p>Alternative text - include a link to download the PDF instead.</p>
-									</object>
-									<div style="text-align: left;">
-										<small style="font-size: 80%;">
-										<strong>In this assignment, for Question 01</strong>, I have provided answers to the questions. <br>
-										
-										<strong>Regarding Question 02</strong>, I developed a program for MapReduce using Apache Spark on the Databricks platform. Initially, the
-										text file 
-										<a href="https://drive.google.com/file/d/1fzJKRfKiDpYmqNsF4IsyAq1muithAwIS/view?usp=sharing" target="_blank">
-											<strong>(view .txt file)</strong></a>
-										 is loaded and assigned to the variable "rdd". Text content is retrieved using the collect function. After
-										retrieving each element, they are mapped using the map function. Subsequently, the reduce function is utilized to
-										aggregate data corresponding to a key. All screenshot of codes and explanations are provided in above pdf. The complete project code is accessible under the <strong>"MAPREDUCE WITH APACHE SPARK:
-										TEXT PROCESSING ON DATABRICKS"</strong> section of the projects tab, available for viewing on GitHub.
-										</small>
-									</div>
-								</div>
-									<hr> <!-- Add horizontal line divider -->
-								<h3><a>D. Assignment IV<br /></a></h3>
-								<div style="text-align: center;">
-									<object data="assets/pdf/c0932089_Assignment4.pdf" type="application/pdf" width="1200" height="600">
-										<p>Alternative text - include a link to download the PDF instead.</p>
-									</object>
-									<div style="text-align: left;">
-										<small style="font-size: 80%;">
-											<strong>In this assignment</strong>, a Databricks notebook and Apache Spark were employed to calculate the correlation and explain the
-											relationship between different variables.
-											
-											Initially,provided
-											<a href="https://drive.google.com/file/d/1Kted4vna2gttvkEHGyTrkI4luGs-Oo-N/view?usp=sharing" target="_blank">
-												<strong>data (Iris DATASET.csv)</strong></a>
-											  is loaded into the workbook, and a Spark session is initialized. Subsequently, correlation is calculated
-											using the <strong>DataFrame API</strong>, <strong>Resilient Distributed Dataset (RDD)</strong>, and <strong>Correlation Matrix</strong>. All the code and visualizations
-											are included in the accompanying PDF. The complete code is accessible under the <strong>"CORRELATION AND THE RELATIONSHIP
-											BETWEEN DIFFERENT VARIABLES"</strong> section of the projects tab, available for viewing on GitHub.
-										</small>
-									</div>
-								</div>
-								<hr> <!-- Add horizontal line divider -->
-							</section>
+								</p>
+							</p>
+							<hr>
+							<strong>B. The Column-oriented DBMS.</strong>
+							<p>
+								<strong>Introduction</strong> 
+								The research paper authored by Michael Stonebraker et al., and titled "C-Store: A Column-oriented DBMS," was presented
+								at the 31st Very Large Databases (VLDB) conference in Trondheim, Norway, 2005. In this paper, the authors introduce the
+								concept of a column-oriented database management system (DBMS) and present the design and implementation of the C-Store
+								system. Considering the importance of this work in the field of database administration, this review aims to critically
+								evaluate the paper's content and contributions by assessing its methodology, findings, and implications for the field of
+								database management. The research provides important insights into database system optimization by addressing the
+								shortcomings of conventional row-oriented databases and suggesting a novel solution designed for analytical workloads.
+								This review aims to offer an insightful analysis of the paper's strengths and limitations to guide future research and
+								development in column-oriented database management systems. <br>
 
+							</p>
+							<p>
+								<strong>Summary</strong> <br>
+								This research paper addresses the limitations of traditional row-oriented database management systems (DBMS) in handling
+								analytical workloads. The authors focus on the performance limitations inherent in row-oriented systems when dealing
+								with large-scale data analytics tasks, particularly due to the need to scan entire rows for queries that often access
+								only a few columns. The researchers introduce the concept of a column-oriented DBMS to tackle the challenges, where data
+								is stored and accessed by column rather than by row. The proposed solution, the C-Store system, is designed to optimize
+								analytical query processing by exploiting the benefits of column-oriented storage, including improved compression,
+								reduced I/O overhead, and enhanced query performance for tasks such as aggregation and analytics. The main innovations
+								of C-Store include its hybrid storage model, which combines columnar and row-oriented storage for flexibility, as well
+								as its advanced query execution engine that leverages vertical partitioning and compression techniques to minimize data
+								retrieval and processing costs. The authors demonstrate the superior performance of C-Store compared to traditional
+								row-oriented systems for analytical workloads through extensive experimental evaluation, validating the efficacy of the
+								column-oriented approach in addressing the identified challenges.<br>
+							</p>
+							<p>
+								<strong>Strengths and Weakness</strong> <br>
+								The research paper manifests several strengths that contribute to its importance in the field of database management.
+								Firstly, the paper clearly articulates the challenges faced by traditional row-oriented database systems when handling
+								analytical workloads, providing a solid motivation for the research. Additionally, it offers a comprehensive literature
+								review that contextualizes the proposed solution within existing research, enhancing the paper's credibility and
+								demonstrating the authors' understanding of the field. The revolutionary approach to column-oriented storage introduced
+								in the paper presents a novel solution to the identified problem, offering potential benefits for analytical workloads
+								such as improved query performance and data compression. Moreover, the authors support their claims with a rigorous
+								experimental evaluation, providing empirical evidence of the performance advantages of the C-Store system compared to
+								traditional systems. Finally, the paper's influence on subsequent research and industry adoption of column-store
+								technologies underscores its significance in shaping the trajectory of database management practices. <br>
+								
+								However, the paper also discloses certain weaknesses that could be addressed for further improvement. One conspicuous
+								flaw is the lack of detailed discussion on certain technical aspects of the C-Store system. While the paper offers a
+								broad outline of the system's design and execution, delving deeper into critical technical elements would improve
+								comprehension for readers and simplify replication of the study. Additionally, the paper would be strengthened by
+								conducting a thorough comparison with alternative approaches or competing systems, thereby offering a more comprehensive
+								understanding of the benefits and limitations inherent in the proposed solution. Furthermore, potential biases or
+								limitations in the experimental methodology should be acknowledged and addressed to ensure the validity of the results.
+								Moreover, the paper could have provided more consideration of real-world deployment challenges or scalability issues, as
+								well as updates or advancements in database technology since its publication, to ensure its relevance in contemporary
+								contexts. Addressing these weaknesses would further strengthen the paper's contributions and impact in the field of
+								database management. <br>
+							</p>
+							<p>
+								<strong>Critical Analysis</strong> <br>
+								In critically analyzing this research paper, it's evident that the paper makes significant contributions to the field of
+								database management. The authors effectively address the limitations of traditional row-oriented systems for analytical
+								workloads and propose a novel solution in the form of the C-Store system. However, even though the paper makes strong
+								points and provides evidence that supports using column-oriented storage, it still leaves some questions unanswered and
+								suggests things to study in the future. For instance, the paper could explore further how well the C-Store system can
+								handle really big datasets and situations where it's spread out over different places. Additionally, further exploration
+								of the real-world deployment challenges and considerations for integrating column-oriented storage into existing
+								database architectures would provide valuable insights for practitioners. Moreover, the broader implications of the
+								research within the field of database management are significant, as it has influenced subsequent research and industry
+								practices, leading to the widespread adoption of column-store technologies. By offering improved performance and
+								scalability for analytical workloads, the paper has shaped the direction of database technology development and paved
+								the way for data processing and analysis innovations. <br>
+							</p>
+							<p>
+								<strong>Conclusion</strong> <br>
+								To sum up, this paper demonstrates a compelling argument for adopting column-oriented storage in database management
+								systems. The paper shines in its ability to clearly explain the problem, thoroughly review existing research, introduce
+								innovative methods, conduct rigorous experiments, and leave a lasting impact on both future research and industry
+								practices. However, there are areas where the paper could be improved, such as providing more detailed technical
+								discussions, conducting broader comparisons with alternative approaches, addressing potential biases in experimental
+								methodology, and considering real-world deployment challenges and scalability issues. Overall, the paper's contributions
+								to the field are undeniable, but further research and refinement could enhance its relevance and applicability in
+								contemporary contexts.<br>
+								<hr>
+							</p>
+						
+							<strong>C. MapReduce</strong>
+							<p>
+								<strong>Introduction</strong> <br>
+								The paper Titled “MapReduce: Simplified Data Processing on Large Clusters” authored by Dean and Ghemawat was published
+								in the Communications of the ACM in 2008. It revolutionized distributed computing by introducing the MapReduce
+								programming model, which simplified parallel data processing across clusters of commodity hardware. MapReduce provided a
+								scalable and user-friendly framework for handling massive datasets by abstracting away low-level infrastructure concerns
+								and dividing computations into map and reduce phases. It has a huge impact beyond academia, shaping industry practices
+								and inspiring the development of distributed computing frameworks. In this review, we critically examine the paper's
+								strengths, weaknesses, and broader implications, aiming to elucidate its lasting significance in the field of
+								distributed computing.<br>
+							</p>
+							<p>
+								<strong>Summary</strong> <br>
+								The paper addresses MapReduce as a two-phase computation model: the map phase for processing input data and the reduce
+								phase for aggregating results. It highlights several key advantages of MapReduce's scalability, fault tolerance, and
+								ease of use. MapReduce allows developers to write parallelizable code without managing low-level details by simplifying
+								the complexities of distributed computing. This accessibility has had a significant impact, inspiring the creation of
+								numerous other distributed computing frameworks and fundamentally changing the landscape of large-scale data processing.<br>
+							</p>
+							<p>
+								<strong>Strengths and Weaknesses</strong> <br>
+								The paper effectively presents the MapReduce programming model, which simplifies parallel data processing by abstracting
+								away complex distributed computing concerns. By presenting MapReduce clearly and understandably, it makes the concept
+								accessible to a wide audience of developers and researchers. In this paper, Dean and Ghemawat demonstrate the
+								scalability of MapReduce, showcasing its ability to efficiently process large datasets across clusters of commodity
+								hardware, and also the paper highlights the robustness of MapReduce through its incorporation of fault tolerance
+								mechanisms. The impact of this paper in the real world is one of the key strengths of this paper. This paper presents
+								both the theoretical framework and practical applicability of MapReduce in handling large-scale data processing tasks. <br>
+								
+								While the paper introduces MapReduce as a simplified programming model for distributed computing, it may not be suitable
+								for all types of data processing tasks. Certain algorithms or computations may be challenging to express efficiently
+								within the MapReduce paradigm, highlighting the need for alternative approaches or extensions to address these
+								limitations. Other limitations could be, that the paper outlines the MapReduce programming model and its advantages, and
+								it provides a limited discussion of alternative approaches to distributed computing. A more comprehensive comparison
+								with traditional distributed computing frameworks and contemporary alternatives could provide valuable insights into the
+								relative strengths and weaknesses of MapReduce. <br>
+							</p>
+							<p>
+								<strong>Critical Analysis</strong> <br>
+								Although MapReduce offers significant advantages in simplicity, scalability, and robustness, it has some limitations.
+								The programming model of MapReduce may not be the best fit for all types of distributed computing tasks, and its
+								overhead in data movement can impact performance. Additionally, as the field evolves, contemporary frameworks like
+								Apache Spark offer additional features and optimizations beyond MapReduce. However, the paper's impact on the field of
+								distributed computing remains undeniable, paving the way for further advancements in big data processing. <br>
+							</p>
+							<p>
+								<strong>Conclusion</strong> <br>
+								To conclude, the paper by Dean and Ghemawat on MapReduce has had a profound impact on distributed computing, providing a
+								foundational framework for processing large-scale datasets. MapReduce's simplicity, scalability, and robustness have
+								made it a cornerstone in the field despite its limitations. As distributed computing continues to evolve, future
+								research and development will build upon MapReduce's contributions, addressing its weaknesses and pushing the boundaries
+								of what's possible in large-scale data processing. <br>
+							</p>
+						</small>
+					</section>
 					</div>
-
 				<!-- Footer -->
 				<footer id="footer">
 					<section>
